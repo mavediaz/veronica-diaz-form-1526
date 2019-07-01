@@ -1,0 +1,121 @@
+/*start with styles here for desktop width*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", "Helvetica", sans-serif;
+    line-height: 1.5;
+
+}
+
+form {
+    margin: 2rem;
+}
+
+/*so the max width is the one requested for desktop*/
+.form-contents {
+    max-width: 50rem;
+    margin: 0 auto;
+
+}
+
+fieldset {
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+box {
+    margin: 0 0 1rem 0;
+    width: 100%;
+}
+
+label {
+    display: block;
+}
+
+input,
+textarea {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    font-family: "Arial", "Helvetica", sans-serif;
+    font-size: 1rem;
+}
+
+#submit-btn {
+    background-color: #6495ED;
+    padding: 10px 40px;
+    color: white;
+}
+
+legend {
+    font-size: 2rem;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    background-color: white;
+}
+
+.fullname-div,
+.email-div {
+    float: left;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#fullname {
+    padding-right: 5%;
+    width: 95%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#email {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#message {
+    width: 100%;
+}
+
+.message-div {
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.button-div {
+    padding-bottom: 30px;
+}
+
+/*the styles need to change when is max width 25 rem*/
+@media (max-width: 25rem) {
+
+    .fullname-div,
+    .email-div,
+    .button-div {
+        float: left;
+        width: 100%;
+    }
+
+    .fullname-div {
+        padding-top: 30px;
+    }
+
+    .email-div {
+        padding-top: 30px;
+        margin-left: 20px;
+        
+    }
+
+    #fullname {
+        width: 100%;
+    }
+    
+    #email {
+        width: 100%;
+    }
+}
